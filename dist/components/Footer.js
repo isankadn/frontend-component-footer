@@ -85,19 +85,46 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         className: "footer d-flex border-top py-3 px-4"
       }, /*#__PURE__*/React.createElement("div", {
         className: "container-fluid d-flex"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "footer-logo-wrapper"
       }, /*#__PURE__*/React.createElement("a", {
         className: "d-block",
         href: config.LMS_BASE_URL,
         "aria-label": intl.formatMessage(messages['footer.logo.ariaLabel'])
       }, /*#__PURE__*/React.createElement("img", {
         style: {
-          maxHeight: 45
+          maxHeight: 50
         },
         src: logo || config.LOGO_TRADEMARK_URL,
         alt: intl.formatMessage(messages['footer.logo.altText'])
-      })), /*#__PURE__*/React.createElement("div", {
-        className: "flex-grow-1"
-      }), showLanguageSelector && /*#__PURE__*/React.createElement(LanguageSelector, {
+      }))), /*#__PURE__*/React.createElement("div", {
+        "class": "copyright-new"
+      }, /*#__PURE__*/React.createElement("p", null, "eLearning Portal by LIBT - Discover, Grow, Achieve "), /*#__PURE__*/React.createElement("p", null, "The London Institute of Business and Technology holds an official registration with the Intellectual Property Office, bearing the Trademark Number UK00003896607")), /*#__PURE__*/React.createElement("div", {
+        "class": "social-media"
+      }, /*#__PURE__*/React.createElement("ul", {
+        "class": "social-area d-inline-block"
+      }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        "class": "",
+        href: "https://www.facebook.com/LondonIBT",
+        target: "_blank"
+      }, /*#__PURE__*/React.createElement("i", {
+        "class": "fa fa-facebook"
+      }))), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        href: "#"
+      }, /*#__PURE__*/React.createElement("i", {
+        "class": "fa fa-twitter",
+        target: "_blank"
+      }))), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        href: "https://www.linkedin.com/school/libt",
+        target: "_blank"
+      }, /*#__PURE__*/React.createElement("i", {
+        "class": "fa fa-linkedin"
+      }))), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        href: "#"
+      }, /*#__PURE__*/React.createElement("i", {
+        "class": "fa fa-instagram",
+        target: "_blank"
+      }))))), showLanguageSelector && /*#__PURE__*/React.createElement(LanguageSelector, {
         options: supportedLanguages,
         onSubmit: onLanguageSelected
       })));

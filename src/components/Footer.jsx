@@ -57,18 +57,32 @@ class SiteFooter extends React.Component {
         className="footer d-flex border-top py-3 px-4"
       >
         <div className="container-fluid d-flex">
+          <div className="footer-logo-wrapper">
           <a
             className="d-block"
             href={config.LMS_BASE_URL}
             aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
           >
             <img
-              style={{ maxHeight: 45 }}
+              style={{ maxHeight: 50 }}
               src={logo || config.LOGO_TRADEMARK_URL}
               alt={intl.formatMessage(messages['footer.logo.altText'])}
             />
           </a>
-          <div className="flex-grow-1" />
+          </div>
+          <div class="copyright-new">
+            <p>eLearning Portal by LIBT - Discover, Grow, Achieve </p>
+            <p>The London Institute of Business and Technology holds an official registration with the Intellectual Property Office, bearing the Trademark Number UK00003896607</p>
+          </div>
+          <div class="social-media">
+            <ul class="social-area d-inline-block">
+              <li><a class="" href="https://www.facebook.com/LondonIBT" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
+              <li><a href="https://www.linkedin.com/school/libt" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" target="_blank"></i></a></li>          
+            </ul>
+          </div>
+         
           {showLanguageSelector && (
             <LanguageSelector
               options={supportedLanguages}
